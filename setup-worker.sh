@@ -21,8 +21,8 @@ service docker restart
 
 sleep 2
 
-docker pull quay.io/travisci/te-worker:latest
-docker tag quay.io/travisci/te-worker te-worker
+docker pull quay.io/travisci/te-worker:dev
+docker tag quay.io/travisci/te-worker:dev te-worker
 
 # pick the languages you are interested in
 langs='android erlang go haskell jvm node-js perl php python ruby'
