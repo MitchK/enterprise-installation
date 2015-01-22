@@ -21,8 +21,8 @@ service docker restart
 sleep 1
 
 # pull the images
-docker pull quay.io/travisci/te-main:latest
-docker tag quay.io/travisci/te-main te-main
+docker pull quay.io/travisci/te-main:dev
+docker tag quay.io/travisci/te-main:dev te-main
  
 # run the install script
 docker run --rm te-main cat /usr/local/travis/src/host.sh | bash
